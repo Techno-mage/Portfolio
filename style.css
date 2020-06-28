@@ -1,0 +1,23 @@
+/*
+.portpics {
+    width: 400px;
+    height: auto;
+}
+
+.portpiece {
+    width: 400px;
+}
+*/
+#portfolio {
+    display: none;
+}
+
+.navbar{
+    background-color: black;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    margin: 2px;
+}

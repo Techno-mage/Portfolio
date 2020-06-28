@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erik Schaal</title>
     <link rel="icon" type="image/ico" href="assets/images/icon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#"> <img src="assets/images/icon.png" alt="logo" style="width:40px;">Erik Schaal</a>
+        <a class="navbar-brand" href="#"> <img src="assets/images/icon.png" alt="logo" style="width:40px;">Erik
+            Schaal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class= "navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About me</a>
+                    <a class="nav-link" href="#" id="aboutMebtn">About me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
-                </li>   
-              </ul>
+                    <a class="nav-link" href="#" id="projectsbtn">Projects</a>
+                </li>
+            </ul>
         </div>
 
-        
+
 
     </nav>
 
     <main class="container bg-light" id="main" style="min-height: 700px;">
 
-        <header class="row">
-            <h1 class="text-dark">about me</h1>
 
-        </header>
-        <hr>
-        <article>
+        <article id = "aboutMe">
+            <header class="row">
+                <h1 class="text-dark">about me</h1>
+
+            </header>
+            <hr>
             <div class="card" style="width:400px; float: left;">
-                <img src="assets/images/profile_pic.png" alt="profile pic" id="profile_pic" class = "img-fluid float-left" style="width:400px; ">
+                <img src="assets/images/profile_pic.png" alt="profile pic" id="profile_pic" class="img-fluid float-left"
+                    style="width:400px; ">
             </div>
             <p>My name is Erik Schaal. But my Github user name is Techno-mage. This is my first attempt at making a
                 portfolio using bootstrap. I hope to add plenty of functionality and Personallity to this portfolio. My
@@ -52,15 +58,58 @@
                 amet. Aenean et tortor at risus viverra adipiscing at. Et sollicitudin ac orci phasellus egestas. Morbi
                 tincidunt augue interdum velit euismod in pellentesque.</p>
 
-                
+
             <p>Here is my Resume: <a href="/assets/ErikSchaalResume.doc.pdf">Resume</a></p>
-            <P>Follow me on Linkin: <a href="https://www.linkedin.com/in/erik-schaal-5007581aa/" >Erik Schaal</a></P>
+            <P>Follow me on Linkin: <a href="https://www.linkedin.com/in/erik-schaal-5007581aa/">Erik Schaal</a></P>
         </article>
+
+        <section id="portfolio">
+            <header class="row">
+                <h1 class="text-info">Portfolio</h1>
+
+            </header>
+            <section class="row">
+                <div class="card col-sm-12 col-md-6 portpiece">
+                    <img> 
+                    <p class="bg-info text-white">Brewery app</p>
+                </div>
+                    
+                <div class="card col-smc-12 col-md-6 portpiece">
+                    <img src = "assets/images/Screenshot_Code Quiz(1).png" class= "portpics card-img-top">
+                    <p class="bg-info text-white">Code Quiz</p>
+                    <p>A Quiz built to test ones programing knowledge</p>
+                    <a herf="#" class="btn button text-white">Go to Application</a>
+                    <a herf="#" class="btn button text-white">Find on github</a>
+                </div>
+                <div class="card col-smc-12 col-md-6 portpiece">
+                    <img src = "assets/images/Screenshot_Work_Day_Scheduler.png" class= "portpics card-img-top">
+                    <p class="bg-info text-white">Day Planner</p>
+                    <p>A day planner to plan out your work day.</p>
+                    <a herf="#" class="btn button text-white">Go to Application</a>
+                    <a herf="#" class="btn button text-white">Find on github</a>
+                </div>
+            </section>
+
+
+        </section>
     </main>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        $("#aboutMebtn").click(function(){
+            $("#aboutMe").css("display","block");
+            $("#portfolio").css("display","none");
+            console.log('triggered')
+        })
+        $("#projectsbtn").click(function(){
+            $("#aboutMe").css("display","none");
+            $("#portfolio").css("display","block");
+            console.log('triggered')
+        })
+    </script>
 </body>
+
 </html>
