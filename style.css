@@ -9,9 +9,14 @@
 }
 */
 body{
-    background-color:darkgray;
-    background-image: linear-gradient(red, silver);
+    background-color:khaki;
+    background-image: linear-gradient(black, gray, black);
+
+    background-attachment: fixed;
     color:white;
+}
+a {
+    color:lawngreen;
 }
 #profile_pic {
     margin: 5px;
@@ -21,12 +26,14 @@ body{
 }
 
 .navbar{
-    background-color: black;
-    background-image: linear-gradient(black, gray, black);
-    font-family: 'Courier New', Courier, monospace;
-    color:green;
+    background-color: rgba(0,0,0,0);
+    background-image: linear-gradient(black, rgb(46, 46, 46));
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    
 }
 .navbar a{
+    
     color:lawngreen;
 }
 
@@ -50,4 +57,11 @@ body{
 .comptxt {
     font-family: 'Courier New', Courier, monospace;
     color:lawngreen;
+}
+.comptxt a:hover {
+    text-decoration: underline;
+}
+.comptxt a:active {
+    color: black;
+    background-color: lawngreen;
 }
