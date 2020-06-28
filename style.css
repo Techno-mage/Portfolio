@@ -8,16 +8,46 @@
     width: 400px;
 }
 */
+body{
+    background-color:darkgray;
+    background-image: linear-gradient(red, silver);
+    color:white;
+}
+#profile_pic {
+    margin: 5px;
+}
 #portfolio {
     display: none;
 }
 
 .navbar{
     background-color: black;
+    background-image: linear-gradient(black, gray, black);
+    font-family: 'Courier New', Courier, monospace;
+    color:green;
 }
+.navbar a{
+    color:lawngreen;
+}
+
 
 .button{
     background-color: black;
     color: white;
     margin: 2px;
+}
+
+.center {
+    float:auto;
+    text-align: center;
+    width:100%;
+}
+
+.compscr {
+    background-image: linear-gradient(black, gray, black);
+    
+}
+.comptxt {
+    font-family: 'Courier New', Courier, monospace;
+    color:lawngreen;
 }
