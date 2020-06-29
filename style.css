@@ -3,11 +3,11 @@
     width: 400px;
     height: auto;
 }
-
-.portpiece {
-    width: 400px;
-}
 */
+.portpiece {
+    padding: 10px;
+}
+
 body{
     background-color:khaki;
     background-image: linear-gradient(black, gray, black);
@@ -37,6 +37,19 @@ a {
     color:lawngreen;
 }
 
+.comptoggle{
+    width: 47px;
+    height: 34px;
+    background-color: transparent;
+}
+
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: lawngreen;
+    margin-bottom: 5px;
+}
 
 .button{
     
