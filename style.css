@@ -19,8 +19,18 @@ a {
     color:lawngreen;
 }
 #profile_pic {
+    margin:auto;
+    display: block;
     margin: 5px;
 }
+@media only screen and (min-width: 768px) {
+    #profile_pic {
+        float: left;
+        display: flex;
+        margin: 5px;
+    }
+}
+
 #portfolio {
     display: none;
 }
