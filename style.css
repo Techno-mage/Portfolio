@@ -39,10 +39,9 @@ a {
 
 
 .button{
-    color: black !important;
-    background-color: lawngreen;
+    
     margin: 2px;
-    font-family: 'Courier New', Courier, monospace;
+    
     font-size: 14px;
     padding: 2px;
 }
@@ -61,12 +60,20 @@ a {
 }
 .comptxt {
     font-family: 'Courier New', Courier, monospace;
-    color:lawngreen;
+    color:lawngreen ;
 }
 .comptxt a:hover {
     text-decoration: underline;
 }
 .comptxt a:active {
+    color: black;
+    background-color: lawngreen;
+}
+
+a.comptxt :hover {
+    text-decoration: underline;
+}
+a.comptxt :active {
     color: black;
     background-color: lawngreen;
 }
