@@ -39,9 +39,12 @@ a {
 
 
 .button{
-    background-color: black;
-    color: white;
+    color: black !important;
+    background-color: lawngreen;
     margin: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 2px;
 }
 
 .center {
@@ -49,6 +52,8 @@ a {
     text-align: center;
     width:100%;
 }
+
+
 
 .compscr {
     background-image: linear-gradient(black, gray, black);
@@ -64,4 +69,10 @@ a {
 .comptxt a:active {
     color: black;
     background-color: lawngreen;
+}
+
+.portbtn{
+    color: black;
+    background-color: lawngreen;
+    
 }
