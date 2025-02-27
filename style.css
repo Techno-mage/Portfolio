@@ -21,13 +21,13 @@ a {
 #profile_pic {
     margin:auto;
     display: block;
-    margin: 5px;
+    margin: 25px;
 }
 @media only screen and (min-width: 768px) {
     #profile_pic {
         float: left;
         display: flex;
-        margin: 5px;
+        margin: 25px;
     }
 }
 
